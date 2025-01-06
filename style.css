@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.Block {
+    width: 800px;
+    height: 700px;
+    border: 1px solid rgb(213, 211, 211);
+    background-color: rgb(244, 245, 245);
+    border-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+label {
+    padding-left: 35px;
+    font-size: large;
+    padding-top: 20px;
+}
+
+#num1,#num2 {
+    padding-left: 16px;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 211, 211);
+    font-size: large;
+    margin-left: 33px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+#dropdown {
+    padding-left: 16px;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 211, 211);
+    font-size: large;
+    margin-left: 33px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+option{
+    background-color: aliceblue;
+}
+.Button {
+    display: flex;
+    justify-content: center;
+    gap:7px;
+}
+
+
+.calci,.clear{
+    height: 40px;
+    background-color: rgb(63, 194, 63);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.clear{
+    width: 80px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(150, 165, 150);
+}
+
+.error {
+    color: red;
+    position: relative;
+    left: 40px;
+    bottom: 13px;
+}
+
+.answer {
+    padding-left: 15px;
+    width: 80%;
+    height: 50px;
+    margin-left: 45px;
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    right: 20px;
+    bottom: 15px;
+}
+
+#output {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 14, 14);
+    padding-left: 10px;
+    position: relative;
+    bottom: -1px;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+p#history {
+    list-style-type: none;
+    left: 32px;
+    width: 90%;
+    overflow: auto;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+p#history li {
+    padding: 8px;
+}

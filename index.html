@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Block"id="main">
+        <h1 class="heading">Interactive Arithmetic Operations</h1>
+        <label>Number A :</label>
+        <div>
+            <input type="text" id="num1" placeholder="Enter a number" >
+            <span id="numA-error" class="error"></span>
+        </div>
+        <label>Number B :</label>
+        <div>
+            <input type="text" id="num2" placeholder="Enter a number" >
+            <span id="numB-error" class="error"></span>
+        </div>
+        <label>Operation :</label>
+        <div>
+            <select id="dropdown">
+                <option id="opt" value="choose">Choose Operation</option>
+                <option value="sum">Addition (+)</option>
+                <option value="diff">Subtraction (-)</option>
+                <option value="multiply">Multiplication (*)</option>
+                <option value="division">Division (/)</option>
+              </select>
+              <span id="operator-error" class="error"></span>
+        </div>
+        <div class="Button">
+            <button class="calci" onclick="return calculation()">Calculate</button>
+            <button class="clear" onclick="return clearField()">Clear</button>
+        </div>
+        <div class = answer>
+            <p>Result : <span  id="output"> </span></p>
+         </div>
+ 
+         <div class="calculationHistory">
+             <h2>Calculation History</h2>
+             <p id="history"></p>
+         </div>
+ 
+     </div>
+     <script src="main.js"></script>
+ </body>
+ </html>
